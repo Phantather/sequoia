@@ -1,0 +1,591 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family:"Stone Soup NF W01 Regular", sans-serif;
+    color: #fff;
+}
+
+body {
+    background: #000;
+}
+
+.container-header {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container {
+    max-width: 1128px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    z-index: 2;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.header-links {
+    display: flex;
+    column-gap: 24px;
+}
+
+.header-link {
+    font-family: 'TTLakesNeue-Medium',sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    transition: .3s all;
+}
+
+.header-link:hover {
+    color: #C2E978;
+}
+
+.header-social:hover svg path {
+    fill: #C2E978;
+}
+
+.header-right {
+    display: flex;
+    column-gap: 35px;
+}
+
+.welcome {
+    background: url("../images/welcome.png") center/cover no-repeat;
+    padding: 152px 0 133px;
+    position: relative;
+}
+
+.welcome-img {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.welcome::before {
+    content: '';
+    width: 100%;
+    height: 173px;
+    background: linear-gradient(180deg, #000000 45.56%, rgba(0, 0, 0, 0.8) 56.45%, rgba(0, 0, 0, 0.6) 67.34%, rgba(0, 0, 0, 0.4) 78.23%, rgba(0, 0, 0, 0.2) 89.11%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.welcome::after {
+    content: '';
+    width: 100%;
+    height: 208px;
+    background: linear-gradient(180deg, #000000 18.83%, rgba(0, 0, 0, 0) 100%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.welcome-content {
+    text-align: center;
+}
+
+.welcome-subtitle {
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 0.05em;
+    color: #C2E978;
+}
+
+.welcome-title {
+    margin: 8px 0;
+}
+
+.welcome-info {
+    font-family: 'TTLakesNeue-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 38px;
+    letter-spacing: 1px;
+    margin: 16px 0 84px;
+}
+
+.welcome-only {
+    font-weight: 400;
+    font-size: 48px;
+    letter-spacing: 0.05em;
+}
+
+.green {
+    color: #C2E978;
+}
+
+.welcome-plan {
+    font-family: 'TTLakesNeue-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 12px;
+}
+
+.subscribe {
+    padding-bottom: 48px;
+    position: relative;
+}
+
+.subscribe::before {
+    content: url("../images/leaves-2.png");
+    position: absolute;
+}
+
+.subscribe-content {
+    background: linear-gradient(180deg, #0E1A19 0%, #133B2A 100%);
+    border-radius: 2px;
+    padding: 76px 96px 76px 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+.subscribe-img {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.subscribe-left {
+    width: 33.33333%;
+    position: relative;
+}
+.subscribe-left::before {
+    content: url("../images/el-1.png");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
+
+.subscribe-title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+}
+
+.subscribe-title .green {
+    font-size: 53px;
+    line-height: 53px;
+    padding-left: 20px;
+}
+
+
+.subscribe-right {
+    width: 33.33333%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 24px;
+    position: relative;
+}
+
+.subscribe-right::after {
+    content: url("../images/el-2.png");
+    position: absolute;
+    top: 40px;
+    right: -40px;
+}
+
+.subscribe-desc {
+    font-family: 'TTLakesNeue-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    text-align: right;
+}
+
+.subscribe-btn {
+    padding: 20px 33px;
+    background: #C2E978;
+    border-radius: 10px;
+    font-family: 'TTLakesNeue-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #08162B;
+    border: none;
+}
+
+.each {
+    padding-bottom: 60px;
+}
+.each-title {
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-bottom: 24px;
+}
+.each-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.each-card {
+    width: calc(50% - 5px);
+    background: #191D2E;
+    padding: 32px 24px;
+}
+.each-card-title {
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 0.05em;
+}
+.each-card-desc {
+    font-family: 'TTLakesNeue-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    font-feature-settings: 'salt' on;
+    margin-top: 4px;
+}
+
+.get {
+    padding-bottom: 50px;
+}
+
+.get-title {
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-bottom: 24px;
+}
+
+.get-card {
+    width: calc(33.33333% - 6.66666px);
+}
+
+.value {
+    padding-bottom: 130px;
+}
+
+.value-content {
+    height: 369px;
+    background: url("../images/value.png") center/cover no-repeat;
+}
+
+.collection {
+    padding-bottom: 150px;
+}
+
+.collection-top {
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    column-gap: 58px;
+    margin-bottom: 48px;
+}
+
+.collection-title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    position: relative;
+}
+
+.collection-title .green {
+    font-size: 53px;
+    line-height: 65px;
+    padding-left: 20px;
+}
+
+.collection-title::before {
+    content: url("../images/el-3.svg");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -25px;
+    left: -15px;
+    z-index: -1;
+}
+
+.collection-text {
+    font-family: 'TTLakesNeue-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    font-feature-settings: 'salt' on;
+}
+
+.collection-row {
+    display: flex;
+    column-gap: 10px;
+}
+
+.collection-card {
+    width: 33.33333%;
+}
+
+.collection-card-img {
+    width: 100%;
+}
+
+.collection-news {
+    font-family: 'TTLakesNeue-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin: 24px 0 16px;
+}
+
+.collection-btn {
+    background: #C2E978;
+    border-radius: 10px;
+    padding: 20px 37px;
+    font-family: 'TTLakesNeue-Bold',sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #08162B;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+
+.airdrop {
+    padding-bottom: 100px;
+}
+
+.airdrop-title {
+    font-weight: 400;
+    font-size: 64px;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.airdrop-subtitle {
+    font-family: 'TTLakesNeue-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    font-feature-settings: 'salt' on;
+    margin: 24px 0 51px;
+}
+
+.airdrop-block {
+    background: linear-gradient(180deg, #131624 0%, #191D2E 100%);
+    padding: 64px 97px 57px 76px;
+    display: flex;
+    column-gap: 40px;
+    margin-top: 80px;
+}
+
+.airdrop-block-title {
+    font-weight: 400;
+    font-size: 48px;
+    letter-spacing: 0.05em;
+}
+
+.airdrop-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.airdrop-info-desc {
+    font-family: 'TTLakesNeue-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    font-feature-settings: 'salt' on;
+}
+
+.airdrop-info-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.airdrop-info-item {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    font-family: 'TTLakesNeue-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-feature-settings: 'salt' on;
+}
+
+
+.footer {
+    padding: 98px 0 51px;
+}
+
+.footer-top {
+    background: linear-gradient(180deg, #201841 0%, #2C205D 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 80px;
+    position: relative;
+    height: 207px;
+}
+
+.footer-like {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-title {
+    font-size: 48px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+}
+
+.footer-links {
+    display: flex;
+    column-gap: 70px;
+}
+
+.footer-copy {
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.roadmap-title {
+    font-weight: 400;
+    font-size: 48px;
+    letter-spacing: 0.05em;
+    padding-left: 60px;
+    margin-bottom: 24px;
+}
+
+.roadmap-row {
+    display: flex;
+    column-gap: 10px;
+}
+
+.roadmap-card {
+    width: 25%;
+    background: linear-gradient(180deg, #10121D 0%, #191D2E 100%);
+    padding: 36px 24px 28px;
+    transition: .5s all;
+}
+
+.roadmap-card:hover, .roadmap-card:hover svg path{
+    background: linear-gradient(180deg, rgba(1, 55, 66, 0.4) 0%, rgba(7, 126, 76, 0.4) 100%);
+    fill: #C2E978;
+    color: white;
+}
+
+.roadmap-card:hover p {
+    color: white;
+}
+
+.roadmap-card-text {
+    height: 112px;
+    font-family: 'TTLakesNeue-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    font-feature-settings: 'salt' on;
+    color: #7E839A;
+    margin-top: 18px;
+}
+
+
+
+.roadmap {
+    position: relative;
+}
+
+.roadmap::before {
+    content: '';
+    background: url("../images/el-4.png");
+    width: 100%;
+    height: 395px;
+    position: absolute;
+    top: -70%;
+    left: 0;
+    z-index: -1;
+}
+
+
+.team {
+    padding-top: 107px;
+    text-align: center;
+}
+.team-title {
+    font-weight: 400;
+    font-size: 72px;
+    letter-spacing: 0.05em;
+}
+.team-row {
+    display: flex;
+    column-gap: 30px;
+}
+.team-card {
+    width: 20%;
+}
+.team-card-img {
+    width: 100%;
+}
+.team-card-name {
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 0.02em;
+    margin: 12px 0;
+}
+.team-card-desc {
+    font-family: 'TTLakesNeue-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #888D9D;
+}
+
+body {
+    position: relative;
+}
+
+body::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url("../images/leaves-3.png");
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
